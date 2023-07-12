@@ -1,0 +1,74 @@
+def generate_html_file():
+    html_code = '''
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Telecom Operator Website</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to our Telecom Operator</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Plans</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>About Us</h2>
+            <p>We are a leading telecom operator providing a wide range of services and plans to meet your communication needs.</p>
+        </section>
+
+        <section>
+            <h2>Services</h2>
+            <ul>
+                <li>Mobile Plans</li>
+                <li>Internet Services</li>
+                <li>Home Phone Services</li>
+                <li>Business Solutions</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Plans</h2>
+            <table>
+                <tr>
+                    <th>Plan</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Basic</td>
+                    <td>Starter plan with limited features</td>
+                    <td>$29.99/month</td>
+                </tr>
+                <tr>
+                    <td>Standard</td>
+                    <td>Popular plan with more features</td>
+                    <td>$49.99/month</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>Advanced plan with all features</td>
+                    <td>$79.99/month</td>
+                </tr>
+            </table>
+        </section>
+
+        <footer>
+            <p>Contact us: info@example.com</p>
+        </footer>
+    </body>
+    </html>
+    '''
+
+    with open('telecom_website.html', 'w') as file:
+        file.write(html_code)
+
+if __name__ == '__main__':
+    generate_html_file()
